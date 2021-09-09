@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <meta charset="utf-8">
         <title>California's Greatest Cliffs</title>
+        <meta charset="utf-8">
+        <!--Embed Style Meyhod-->
+        <style>
+            /* Header */
+            header {
+                width: 100%;
+                min-height: 400px;
+                padding-top: 3em;
+            }
+            #home header {
+                background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+                background-size: 1500px;
+            }
+            .main-header {
+                background-color:rgb(255, 255, 255, 0.8);
+                width: 700px;
+                margin: 2em auto 0 auto;
+                min-height: 100px;
+                height: 100px;
+            }
+            .main-header .logo img {
+                width: 100px;
+                height: 100px;
+                margin: 0 2 em 0 0;
+                float: left;
+            }
+            /* Navigation */
+            .main-menu {
+                margin-left: 227px;
+                font-weight: 400;
+            }
+            .main-menu ul li {
+                list-style-type: none;
+                display: inline-block;
+                float: left;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-left: 1px solid rgba(202, 204, 202, 0.6);
+                line-height: 100px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        </style>
 </head>
-<body>
+<body id="home">
     <!--Container to wrap everything-->
      <div id="container">
          <header>
-             <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
-        <div class="main-header"></div>
-        <div class="logo"></div>
+   <div class="main-header">
+            
         <!--Brand of Website-->
         <img src="images/logo.png" alt="great cliffs Logo" width="125">
         <!--Main Navigation-->
-        <nav class="Main-Menu">
+        <nav class="main-menu">
         <ul>
             <li>Home</li>
             <li>Cliffs</li>
@@ -22,6 +63,7 @@
             <li>Contact</li>
         </ul>
      </nav><!--End Main Navigation-->
+    </div>
     </header> 
      <!--Main Content-->
  <main>
@@ -62,8 +104,8 @@
                 </ul>
             </section>
         <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-
+</div>
    </footer>
-    </container><!--End of Container-->
+</div><!--End of Container-->
 </body>
 </html>
