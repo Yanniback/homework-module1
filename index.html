@@ -3,6 +3,8 @@
 <head>
         <title>California's Greatest Cliffs</title>
         <meta charset="utf-8">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Embed Style Meyhod-->
         <style>
             /* Header */
@@ -44,6 +46,104 @@
                 text-transform: uppercase;
                 font-size: 14px;
             }
+            .main-menu ul li a {
+                 text-decoration: none;
+                color: #888;
+            }
+            .main-menu ul li a:hover {
+             color: #9ed034;
+            }
+            .main-menu ul li.active {
+           background: #9ed034;
+             border: none;
+            }
+            .main-menu ul li.active a {
+              color: #fff;
+            }
+            /* Main */
+            main {
+                padding: 3em 6em 3em 5.5em;
+                margin: 2em 0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            main h1 {
+                font-size: 2.5em;
+                padding-bottom: 0.5em;
+                color:#9ed034
+            }
+            main h2 {
+                font-size: 1.7em;
+            }
+            /* Partners */
+            section {
+                width: 100%;
+                background-color:#4288c3;
+            }
+            section #partners {
+                width: 1200px;
+                padding: 2em 0 2em 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+            section #partners .partner {
+                display: inline-block;
+                margin: 0 0.75em;
+                padding: 1.3em 1.5em;
+                background-color:#fff;
+                border-radius: 50%;
+            }
+            section #partners .partner img {
+                width: 90px;
+                height: 90px;
+            }
+            /* footer */
+            footer {
+                width: 100%;
+                height: 155px;
+                padding-bottom: lem;
+                background-color: #ecfab8;
+            }
+            footer #nondisclaimer .copy {
+                padding: 3.5em 3.5em 3.5em 13em;
+                float: left;
+                font-size: 0.9em; 
+            }
+            footer #nondisclaimer .social {
+                padding: 2.5em;
+                margin-right: 9.25em;
+                float: right;
+            }
+            footer #disclaimer {
+                clear: both;
+            }
+            footer #disclaimer p {
+                font-size: 0.85em;
+                text-align: center;
+            }
+            footer #nondisclaimer .social .fa {
+                padding: 15px;
+                font-size: 15px;
+                width: 15px;
+                text-align: center;
+                text-decoration: none;
+                margin: 0 4px;
+                border-radius: 50%;
+            }
+            footer #nondisclaimer .social .fa:hover {
+                opacity: 0.7;
+            }
+            footer #nondisclaimer .social .fa-facebook {
+                background: #3B5998;
+                color: white
+            }
+            footer #nondisclaimer .social .fa-twitter {
+                background: #55ACEE;
+                color: white;
+            }
+            footer #nondisclaimer .social .fa-instagram {
+                background: #125688;
+                color: white;
+            }
         </style>
 </head>
 <body id="home">
@@ -53,16 +153,18 @@
    <div class="main-header">
             
         <!--Brand of Website-->
+        <div class="logo">
         <img src="images/logo.png" alt="great cliffs Logo" width="125">
+        </div>
         <!--Main Navigation-->
         <nav class="main-menu">
-        <ul>
-            <li>Home</li>
-            <li>Cliffs</li>
-            <li>Events</li>
-            <li>Contact</li>
-        </ul>
-     </nav><!--End Main Navigation-->
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="cliffs">Cliffs</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><!--End Main Navigation-->
     </div>
     </header> 
      <!--Main Content-->
@@ -73,38 +175,49 @@
      
      <h2>Where are these Cliffs?</h2>
         <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.</p>
-  
+  </main>
   <section>
-       <ul id="partners"></ul>
-            <liclass="partner">
-               <h3>Partner 1 Image<h3>
-                <h3>Partner 2 Image<h3>
-                 <h3>Partner 3 Image</h3>
-                  <h3>Partner 4 Image</h3>
-                   <h3>Partner 5 Image</h3>
-                    <h3>Partner 6 Image</h3>
-       </ul>
+  <ul id="partners">
+       <li class="partner">
+        <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+    </li>
+        <li class="partner">
+            <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+        </li>
+       <li class="partner">
+            <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+        </li>
+       <li class="partner">
+            <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+        </li>
+       <li class="partner">
+            <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+        </li>
+       <li class="partner">
+            <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Groups">
+        </li>         
+    </ul>
    </section>
- </main><!--End Main Content-->
+
 <!--Footer Information-->
    <footer>
        <div id="nondisclaimer">
           <div class="copy"> &copy; Copyright 2020 :: GreatCliffs.com</div>
-
-            <p id="disclaimer"></p>
-                
-            <h3 class="social"></h3>
-
-            <section>
-                <ul id="Social Media"></ul>
-                     <liclass="partner">
-                        <h3>Facebook Image<h3>
-                         <h3>Instagram Image<h3>
-                          <h3>Twitter Image</h3>           
-                </ul>
+<section>
+    
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
             </section>
-        <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-</div>
+            <div id="disclaimer">
+            <div><p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p></div> 
+            
+            <h3 class="social"></h3>
+            
+       
+
    </footer>
 </div><!--End of Container-->
 </body>
