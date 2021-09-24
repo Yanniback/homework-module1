@@ -273,5 +273,29 @@ form .button input {
   height: 2.5em;
   font-size: 1.2em;
   font-weight: bold;
-  /*back
+  /*background-color: #4977D1;*/
+  color: #fff;
+  border: none;
+}
+#contact p#codes {
+  position: relative;
+  left: 140px;
+  bottom: 30px;
+  text-align: center;
+  display: block;
+  margin: 20px 0 10px 0;
+  width: 100px;
+  background-color: #24242377;
+  border: none;
+  padding: 4px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+}
+#contact .randomcode input {
+  position: relative;
+  width: 125px;
+  height: 18px;
+  top: 15px;
+  
 }
