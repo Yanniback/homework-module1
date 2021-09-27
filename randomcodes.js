@@ -1,9 +1,11 @@
 /*------Random Codes------*/
 
-//Function to generate combination of characters
+//Note: submit button is initially disabled upon loading of this page - see <body> in html
 function generateCode() {
-    //Create variables to store generated codes and the type of characters we want to show as code
-    var code = ' ';//initialize to null value
+    var code = ' '; //Create variables to store generated codes and initialize to empty value
+    var getCode = ' '; // to store entered code
+    var btnvalue; // for button boolean value
+    //Creat variable to hold the type of characters we want to show as codes
     var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwuxyz0123456789@#$';
 
 
@@ -17,9 +19,19 @@ function generateCode() {
 //Get HTML element to display
 document.getElementById("codes").innerHTML = generateCode();
 
-//Disable Button
-function disableButton() {
-    document.getElementById("submit").disabled = true;
+//determine when to able or disable Button
+function disableButton(btnvalue) {
+    document.getElementById("submit").disabled = btnvalue; //able/disbale button
+    if (btnvalue == true) { //test if button is disable or enabled
+        //Set button and label color translucent
+        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+        document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
+    } else {
+        //Set button and label color with no transparency
+        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
+        document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
+    }
 }
+//
 //Activate function
 disableButton();

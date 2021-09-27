@@ -210,7 +210,9 @@ label {
 }
 input, textarea {
   width: 300px;
+  
 }
+
 /* attribute selector */
 input[type="radio"] {
   width: 25px;
