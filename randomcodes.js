@@ -32,6 +32,19 @@ function disableButton(btnvalue) {
         document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
     }
 }
-//
+//Listen to user input code
+var codebox = document.getElementById("codeentered"); //get textbox
+codebox.addEventListener("input", evaluateCode); //Listen to code enetered in textbox
+
+//Run function if detected user had entered a character in textbox
+function evaluateCode() {
+        getCode = document.getElementById("codeentered").ariaValueMax; //get character entered
+        var charset1 = getCode.trim(); //Remove any hidden characters entered
+        var charset2 = code.trim(); //Remove any hidden characters generated
+        //Test if code entered matches the number of generated characters
+        if (charset1.length == charset2.length && charset1 == charset2) {
+            disableButton(false); //If match, run the function to enabled button
+        }
+    }
 //Activate function
 disableButton();
