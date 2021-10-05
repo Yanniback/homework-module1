@@ -203,14 +203,17 @@ td:first-child {
   font-weight: bold;
   background: #bde1ff;
 }
+#activities .highlight {
+  background-color: #9fd034b6;
+}
 /* Contact */
 label {
   display: block;
   margin: 15px 0 0 0;
 }
-input, textarea {
+input,
+textarea {
   width: 300px;
-  
 }
 
 /* attribute selector */
@@ -247,28 +250,28 @@ legend {
   margin: 2.5em 1.2em 0 1.2em;
 }
 #cliffs main .site h3 {
-  background:#852b1b;
+  background: #852b1b;
   color: #fff;
   text-align: center;
   height: 2em;
-  padding-top: .5em;
+  padding-top: 0.5em;
   margin: 0;
 }
 #cliffs main .site img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* clock */
 #timeofday {
   padding: 15px 0 20px 0;
- font-family: Arial, Helvetica, sans-serif;
- text-align: center;
- background: linear-gradient(
-   0deg,
-   rgba(251,215,139,1) 0%, 
-   rgba(118,213,245,1) 100%
- )
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
 }
 
 /* Contact form */
@@ -312,5 +315,4 @@ form .button input {
   bottom: 30px;
   width: 125px;
   height: 18px;
-  
 }

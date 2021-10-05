@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <title>California's Greatest Cliffs</title>
         <link rel="stylesheet"  href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 </head>
 <body id="activities">
     <!--Container to wrap everything-->
@@ -31,7 +32,7 @@
      <h1>Activities</h1>
     
         <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
-        <table border="1">
+        <table id= "Data" border="1">
             <caption>Activities at the Cliffs</caption>
             <thead>
                 <tr>    
@@ -44,38 +45,44 @@
             </thead>
             <!--Start of Table-->
             <tbody>
+             
              <tr>
-                <td>Hiking</td>
+                <td class = "none">Hiking</td>
                 <td>College Hikes</td>
                 <td>Family Fun</td>
                 <td>Treasure Trails</td>
                 <td>Canyon Explorer</td>
              </tr>
+             
              <tr>
-                <td>Kayak</td>
+                <td class = "none">Kayak</td>
                 <td>Western Kayak Meetup</td>
                 <td>Not Available</td>
                 <td>Youth Kayaking</td>
                 <td>Kayak Down</td>
              </tr>
+             
              <tr>
-                <td>Skydiving</td>
+                <td class = "none">Skydiving</td>
                 <td>Seacliff Diving</td>
                 <td>Sky is the limit</td>
                 <td>Not Available</td>
                 <td>Sky Diving for Beginners</td>
              </tr>
+             
              <tr>
-                <td>Biking</td>
+                <td class = "none">Biking</td>
                 <td>Bicycle for One</td>
                 <td>Not Available</td>
                 <td>Bike Meetup Group</td>
                 <td>Not Available</td>
              </tr>
+            
             </tbody>
+            
             <tfoot>
             <tr>
-                 <td>Camping</td>
+                 <td class = "none">Camping</td>
                  <td>Youth Camp</td>
                  <td>Rent a Tent</td>
                  <td>Campground Adventure</td>
@@ -127,5 +134,7 @@
 <script src="digclock.js"></script>
 <!--Partners-->
 <script src="site_script.js"></script>
+<!--Activity Script-->
+<script src="activity.js"></script>
 </body>
 </html>
